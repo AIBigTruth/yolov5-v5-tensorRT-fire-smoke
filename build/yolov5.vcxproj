@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6FCFD0B3-42CC-3D04-846F-9646DE25CB5D}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>yolov5</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.1.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">yolov5.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">yolov5</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">yolov5.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">yolov5</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">yolov5.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">yolov5</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">yolov5.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">yolov5</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++11 -Ofast -std=c++11</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_MWAITXINTRIN_H_INCLUDED;API_EXPORTS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_MWAITXINTRIN_H_INCLUDED;API_EXPORTS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(Include)</Include>
+      <Defines>_WINDOWS;API_EXPORTS;CMAKE_INTDIR="Debug";%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++11 -Xcompiler="/EHsc -Zi -Ob0"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>Od</Optimization>
+      <Runtime>MDd</Runtime>
+      <RuntimeChecks>RTC1</RuntimeChecks>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>nvinfer.lib;nvinfer_plugin.lib;opencv_world345d.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\lib\x64\cudart.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/TensorRT7.2.1.6-cuda11.1-cudnn8.0/lib;D:/TensorRT7.2.1.6-cuda11.1-cudnn8.0/lib/$(Configuration);D:/opencv345/build/x64/vc15/lib;D:/opencv345/build/x64/vc15/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/Debug/yolov5.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/Debug/yolov5.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++11 -Ofast -std=c++11</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_MWAITXINTRIN_H_INCLUDED;NDEBUG;API_EXPORTS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_MWAITXINTRIN_H_INCLUDED;NDEBUG;API_EXPORTS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(Include)</Include>
+      <Defines>_WINDOWS;NDEBUG;API_EXPORTS;CMAKE_INTDIR="Release";%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++11 -Xcompiler="/EHsc -Ob2"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>nvinfer.lib;nvinfer_plugin.lib;opencv_world345.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\lib\x64\cudart.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/TensorRT7.2.1.6-cuda11.1-cudnn8.0/lib;D:/TensorRT7.2.1.6-cuda11.1-cudnn8.0/lib/$(Configuration);D:/opencv345/build/x64/vc15/lib;D:/opencv345/build/x64/vc15/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/Release/yolov5.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/Release/yolov5.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++11 -Ofast -std=c++11</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_MWAITXINTRIN_H_INCLUDED;NDEBUG;API_EXPORTS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_MWAITXINTRIN_H_INCLUDED;NDEBUG;API_EXPORTS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(Include)</Include>
+      <Defines>_WINDOWS;NDEBUG;API_EXPORTS;CMAKE_INTDIR="MinSizeRel";%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++11 -Xcompiler="/EHsc -Ob1"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O1</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>nvinfer.lib;nvinfer_plugin.lib;opencv_world345.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\lib\x64\cudart.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/TensorRT7.2.1.6-cuda11.1-cudnn8.0/lib;D:/TensorRT7.2.1.6-cuda11.1-cudnn8.0/lib/$(Configuration);D:/opencv345/build/x64/vc15/lib;D:/opencv345/build/x64/vc15/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/MinSizeRel/yolov5.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/MinSizeRel/yolov5.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++11 -Ofast -std=c++11</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_MWAITXINTRIN_H_INCLUDED;NDEBUG;API_EXPORTS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_MWAITXINTRIN_H_INCLUDED;NDEBUG;API_EXPORTS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(Include)</Include>
+      <Defines>_WINDOWS;NDEBUG;API_EXPORTS;CMAKE_INTDIR="RelWithDebInfo";%(Defines)</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -std=c++11 -Xcompiler="/EHsc -Zi -Ob1"</AdditionalOptions>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MD</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+      <Warning>W3</Warning>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\include;F:\github\tensorrtx-v5\yolov5-cmake-google-video\include;D:\TensorRT7.2.1.6-cuda11.1-cudnn8.0\include;D:\opencv345\build\include;F:\github\tensorrtx-v5\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>nvinfer.lib;nvinfer_plugin.lib;opencv_world345.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.1\lib\x64\cudart.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>D:/TensorRT7.2.1.6-cuda11.1-cudnn8.0/lib;D:/TensorRT7.2.1.6-cuda11.1-cudnn8.0/lib/$(Configuration);D:/opencv345/build/x64/vc15/lib;D:/opencv345/build/x64/vc15/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/RelWithDebInfo/yolov5.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/RelWithDebInfo/yolov5.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-Wno-deprecated-gpu-targets</AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="F:\github\tensorrtx-v5\yolov5-cmake-google-video\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule F:/github/tensorrtx-v5/yolov5-cmake-google-video/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\cmake-3.15.3-win64-x64\bin\cmake.exe -SF:/github/tensorrtx-v5/yolov5-cmake-google-video -BF:/github/tensorrtx-v5/yolov5-cmake-google-video/build --check-stamp-file F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCUDAInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckIncludeFile.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckLibraryExists.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\NVIDIA-CUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindCUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindCUDA\select_compute_arch.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindThreads.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\opencv345\build\OpenCVConfig-version.cmake;D:\opencv345\build\OpenCVConfig.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCUDACompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCXXCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeRCCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule F:/github/tensorrtx-v5/yolov5-cmake-google-video/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\cmake-3.15.3-win64-x64\bin\cmake.exe -SF:/github/tensorrtx-v5/yolov5-cmake-google-video -BF:/github/tensorrtx-v5/yolov5-cmake-google-video/build --check-stamp-file F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCUDAInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckIncludeFile.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckLibraryExists.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\NVIDIA-CUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindCUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindCUDA\select_compute_arch.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindThreads.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\opencv345\build\OpenCVConfig-version.cmake;D:\opencv345\build\OpenCVConfig.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCUDACompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCXXCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeRCCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule F:/github/tensorrtx-v5/yolov5-cmake-google-video/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\cmake-3.15.3-win64-x64\bin\cmake.exe -SF:/github/tensorrtx-v5/yolov5-cmake-google-video -BF:/github/tensorrtx-v5/yolov5-cmake-google-video/build --check-stamp-file F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCUDAInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckIncludeFile.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckLibraryExists.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\NVIDIA-CUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindCUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindCUDA\select_compute_arch.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindThreads.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\opencv345\build\OpenCVConfig-version.cmake;D:\opencv345\build\OpenCVConfig.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCUDACompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCXXCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeRCCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule F:/github/tensorrtx-v5/yolov5-cmake-google-video/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\cmake-3.15.3-win64-x64\bin\cmake.exe -SF:/github/tensorrtx-v5/yolov5-cmake-google-video -BF:/github/tensorrtx-v5/yolov5-cmake-google-video/build --check-stamp-file F:/github/tensorrtx-v5/yolov5-cmake-google-video/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCUDAInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCXXInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeCommonLanguageInclude.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeGenericSystem.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeInitializeConfigs.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeLanguageInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeRCInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeSystemSpecificInformation.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CMakeSystemSpecificInitialize.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckCSourceCompiles.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckIncludeFile.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\CheckLibraryExists.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\MSVC-C.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\MSVC-CXX.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Compiler\NVIDIA-CUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindCUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindCUDA\select_compute_arch.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindPackageHandleStandardArgs.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindPackageMessage.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\FindThreads.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC-C.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC-CXX.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-MSVC.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows-NVIDIA-CUDA.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\Windows.cmake;D:\cmake-3.15.3-win64-x64\share\cmake-3.15\Modules\Platform\WindowsPaths.cmake;D:\opencv345\build\OpenCVConfig-version.cmake;D:\opencv345\build\OpenCVConfig.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCUDACompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeCXXCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeRCCompiler.cmake;F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\3.15.3\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\calibrator.cpp" />
+    <ClCompile Include="..\save-video.cpp" />
+    <ClCompile Include="..\yolov5-camera.cpp" />
+    <ClCompile Include="..\yolov5.cpp" />
+    <ClInclude Include="..\calibrator.h" />
+    <ClInclude Include="..\cuda_utils.h" />
+    <ClInclude Include="..\cv_puttextzh.h" />
+    <ClInclude Include="..\dirent.h" />
+    <ClInclude Include="..\logging.h" />
+    <ClInclude Include="..\macros.h" />
+    <ClInclude Include="..\preprocess.h" />
+    <ClInclude Include="..\utils.h" />
+    <ClInclude Include="F:\github\tensorrtx-v5\yolov5-cmake-google-video\common.hpp" />
+    <CudaCompile Include="..\preprocess.cu" />
+    <CudaCompile Include="..\yololayer.cu" />
+    <ClInclude Include="F:\github\tensorrtx-v5\yolov5-cmake-google-video\yololayer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\ZERO_CHECK.vcxproj">
+      <Project>{DA9147C2-711D-3436-92A6-0C7F7FB6EB42}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 11.1.targets" />
+  </ImportGroup>
+</Project>

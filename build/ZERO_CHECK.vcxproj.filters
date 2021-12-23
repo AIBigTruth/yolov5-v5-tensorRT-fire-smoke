@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="F:\github\tensorrtx-v5\yolov5-cmake-google-video\build\CMakeFiles\651b1b17b2d50e0ea15bc693eb03bf07\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{E0DD9BD9-D1F7-3DA1-AE1F-DC89E5B97AB7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

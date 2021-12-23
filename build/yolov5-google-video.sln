@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "yolov5", "yolov5.vcxproj", "{6FCFD0B3-42CC-3D04-846F-9646DE25CB5D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		MinSizeRel|x64 = MinSizeRel|x64
+		Release|x64 = Release|x64
+		RelWithDebInfo|x64 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FCFD0B3-42CC-3D04-846F-9646DE25CB5D}.Debug|x64.ActiveCfg = Debug|x64
+		{6FCFD0B3-42CC-3D04-846F-9646DE25CB5D}.Debug|x64.Build.0 = Debug|x64
+		{6FCFD0B3-42CC-3D04-846F-9646DE25CB5D}.MinSizeRel|x64.ActiveCfg = MinSizeRel|x64
+		{6FCFD0B3-42CC-3D04-846F-9646DE25CB5D}.MinSizeRel|x64.Build.0 = MinSizeRel|x64
+		{6FCFD0B3-42CC-3D04-846F-9646DE25CB5D}.Release|x64.ActiveCfg = Release|x64
+		{6FCFD0B3-42CC-3D04-846F-9646DE25CB5D}.Release|x64.Build.0 = Release|x64
+		{6FCFD0B3-42CC-3D04-846F-9646DE25CB5D}.RelWithDebInfo|x64.ActiveCfg = RelWithDebInfo|x64
+		{6FCFD0B3-42CC-3D04-846F-9646DE25CB5D}.RelWithDebInfo|x64.Build.0 = RelWithDebInfo|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9B813208-6A87-3D40-9B0B-16E6A2C0C9FC}
+	EndGlobalSection
+EndGlobal
