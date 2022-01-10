@@ -10,6 +10,7 @@
 #include "cv_puttextzh.h"
 #include <ctime>
 
+
 #define USE_FP16  // set USE_INT8 or USE_FP16 or USE_FP32
 #define DEVICE 0  // GPU id
 #define NMS_THRESH 0.4
@@ -380,6 +381,7 @@ int main(int argc, char** argv) {
         std::cerr << " read " << engine_name << " error! " << std::endl;
         return -1;
     }
+
     char* trtModelStream{ nullptr };
     size_t size = 0;
     file.seekg(0, file.end);
@@ -423,7 +425,7 @@ int main(int argc, char** argv) {
 
     // =================================== read video and do inference============================
     //cv::VideoCapture capture(0);
-    cv::VideoCapture capture("fire6.mp4");
+    cv::VideoCapture capture("fire1.mp4");
     //cv::VideoCapture capture("fire20.avi");
     int video_fps = (int)capture.get(CV_CAP_PROP_FPS);
     int video_speed = 1000 / video_fps;
